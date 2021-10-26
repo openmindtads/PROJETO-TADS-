@@ -13,8 +13,8 @@
 | 3020105436 | Jessica Carvalho da Silva | TADS  | 5A    |
 | 3020105464 | Bruno Henrique Santos de Souza | TADS  | 5A |
 | 3020101161 | Lucas Cussulini Lima  | TADS  | 5A   
-| 0000000000 | Jônatas | TADS  | 5A  |
-| 0000000000 | Felipe  | TADS  | 5A  |
+| 3020101161 | Jônatas Félix Magalhães | TADS  | 5A  |
+| 3020106503 | Felipe Elias Ribeiro de Toledo  | TADS  | 5A  |
 
 ## Descrição do Projeto
 Desenvolver um ChatBot para tirar dúvidas sobre o Covid19. Será desenvolvido em HTML, CSS, PHP e Banco de Dados SQL. Hospedado no 000webhost.
