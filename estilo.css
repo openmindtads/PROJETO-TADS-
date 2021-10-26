@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic';
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #ddd;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #ccc;
+}
+.Layout{
+    width: 1320px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 0px solid;
+    border-top: 0px;
+}
+.Layout .title{
+    background: rgb(94, 230, 235);
+    color: #ffff;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid rgb(94, 230, 235);
+    border-radius: 5px 5px 0 0;
+}
+.Layout .msgchat{
+    padding: 15px 15px;
+    min-height: 500px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.Layout .msgchat .inbox{
+    width:100%;
+    display: flex;
+    align-items: baseline;
+}
+.Layout .msgchat .user-inbox{
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+.Layout .msgchat .inbox .icon{
+    height: 80px;
+    width: 80px;
+    color: #ffff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: rgb(80, 220, 224);
+}
+.Layout .msgchat .inbox .icon img{
+    width: 60px;
+    height: 70px;
+}
+.Layout .rodape .input-data button img{
+    width: 40px;
+    height: 27px;
+}
+.Layout .msgchat .inbox .msg-header{
+    max-width: 53%;
+    margin-left: 15px;
+}
+.msgchat .inbox .msg-header p{
+    color: #ffff;
+    background: rgb(80, 220, 224);
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 17px;
+    word-break: break-all;
+}
+.msgchat .user-inbox .msg-header p{
+    color: #ffff;
+    background: rgb(177, 176, 176);
+}
+.Layout .rodape{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(231, 230, 230);
+    border-top: 1px solid rgb(231, 230, 230);
+    border-radius: 0 0 5px 5px;
+}
+.Layout .rodape .input-data{
+    height: 35px;
+    width: 950px;
+    position: relative;
+}
+.Layout .rodape .input-data input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0 80px 0 15px;
+    border-radius: 3px; 
+    font-size: 15px;
+    background: #ffff;
+    transition: all 0.3s ease;
+}
+.rodape .input-data input:focus{
+    border-color: rgb(14, 14, 13);
+}
+.rodape .input-data input::placeholder{
+    color: #999999;
+    transition: all 0.3s ease;
+}
+.input-data input:focus::placeholder{
+    color: #bfbfbf;
+}
+.Layout .rodape .input-data button{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    height: 30px;
+    width: 65px;
+    color: #ffff;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+.Layout .rodape .input-data input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
